@@ -2,13 +2,13 @@ const navElement = document.querySelector('.navbar');
 const activePage = navElement.getAttribute('active-page');
 
 const navItems = [
-  { name: 'home', label: 'home', href: '/home', disabled: false },
+  { name: 'home', label: 'home', href: '/', disabled: false },
   { name: 'about', label: 'about us', href: '/about', disabled: true },
   { name: 'certifications', label: 'certifications', href: '/', disabled: true },
   { name: 'careers', label: 'careers', href: '/', disabled: true },
   { name: 'seminars', label: 'seminars', href: '/', disabled: true },
   { name: 'blogs', label: 'tech blogs', href: '/', disabled: true },
-  { name: 'login', label: 'iportal login', href: '/login.html', disabled: false }
+  { name: 'login', label: 'iportal login', href: '/login', disabled: false }
 ];
 
 const navbarHtml = `
