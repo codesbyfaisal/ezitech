@@ -1,0 +1,368 @@
+/* Extra Small (xs) - for screens smaller than 576px */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 90%;
+  }
+  .container {
+    width: 92vw;
+    margin: 0 auto;
+  }
+
+  .navlinks {
+    top: 45%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+  .text-slider {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+  }
+
+  .summer-card img {
+    display: none;
+  }
+
+  footer {
+    overflow: hidden;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    padding: 0 1rem;
+    padding-right: 2rem;
+    text-align: start;
+    margin-top: 3rem;
+  }
+
+  .footer-content > div {
+    width: 95% !important;
+    max-width: 98% !important;
+    text-align: center;
+
+    & li {
+      list-style: none;
+    }
+  }
+
+  .footer-content .popular-courses .course {
+    text-align: start;
+  }
+
+  .copyright {
+    flex-direction: column-reverse;
+  }
+
+  .summer-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .summer-card .course {
+    padding: 1.3rem 0;
+  }
+  .summer-card img {
+    display: none;
+  }
+
+  .mobile-app .container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+    & img {
+      width: 70%;
+    }
+  }
+
+  .mobile-app .app-links {
+    justify-content: center;
+  }
+
+  .login-left {
+    display: none;
+  }
+  .login-right {
+    flex-basis: 100%;
+  }
+}
+
+/* Small (sm) - for screens 576px and larger */
+@media (min-width: 576px) {
+  html {
+    font-size: 90%;
+  }
+
+  .container {
+    width: 92vw;
+    margin: 0 auto;
+  }
+
+  .navlinks {
+    top: 45%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+  .text-slider {
+    font-size: 3rem;
+  }
+
+  .summer-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .summer-card .course {
+    padding: 1.3rem 0;
+  }
+  .summer-card img {
+    display: none;
+  }
+
+  .footer-content .about {
+    grid-area: 1/1 /3/9;
+    max-width: 24rem;
+  }
+  .popular-courses {
+    grid-area: 3 / 1 / 8 / 6;
+  }
+  .footer-content .pages {
+    grid-area: 3 / 8 / 6 / 10;
+    text-wrap: nowrap;
+  }
+  .footer-content .contact {
+    grid-area: 6 / 1 / 9 / 12;
+  }
+
+  .copyright {
+    flex-direction: column-reverse;
+  }
+
+  .login-left {
+    display: none;
+  }
+  .login-right {
+    flex-basis: 100%;
+  }
+}
+
+/* Medium (md) - for screens 768px and larger */
+@media (min-width: 768px) {
+  html {
+    font-size: 93%;
+  }
+
+  .container {
+    width: 94vw;
+  }
+
+  .navlinks {
+    top: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle,
+  .search-bar,
+  .explore-text,
+  .product {
+    display: block;
+  }
+
+  .products {
+    display: flex;
+    align-items: center;
+  }
+
+  .summer-cards {
+    flex-wrap: nowrap;
+    height: max-content !important;
+  }
+
+  .footer-content .about {
+    grid-area: 1 / 1 / 3 / 4;
+  }
+  .popular-courses {
+    grid-area: 1 / 4 / 3 / 7;
+  }
+  .footer-content .pages {
+    grid-area: 1 / 7 / 3 / 9;
+  }
+  .footer-content .contact {
+    grid-area: 1 / 9 / 3 / 12;
+  }
+
+  .login-left {
+    display: block;
+    flex-basis: 70%;
+    padding: 1rem 5rem;
+  }
+
+  .login-right {
+    flex-basis: 30%;
+  }
+}
+
+/* Large (lg) - for screens 992px and larger */
+@media (min-width: 992px) {
+  html {
+    font-size: 98%;
+  }
+
+  .container {
+    width: 92vw;
+  }
+
+  .navlinks {
+    top: 35%;
+  }
+
+  .hero {
+    min-height: 98vh;
+  }
+
+  .hero-content {
+    width: 70% !important;
+    max-width: 50rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .summer-courses .summer-card {
+    box-shadow: 0 0 1px 0 #70707081;
+    transition: all 0.3s;
+    max-height: 25rem;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      overflow: visible;
+      height: 38rem;
+      max-height: 38rem;
+      box-shadow: 0 0 1rem 0 #eee;
+    }
+  }
+
+  .summer-card .course {
+    justify-content: start;
+    padding: 1rem 0;
+  }
+
+  .summer-card img {
+    display: block;
+  }
+
+  .card-total {
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+
+    & span {
+      text-decoration: line-through;
+      font-weight: normal;
+    }
+
+    & p {
+      z-index: 222;
+      font-weight: 600;
+    }
+  }
+
+  .card-total .shadow {
+    background: linear-gradient(
+      to top,
+      white 30%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0.005) 10%,
+      rgba(255, 255, 255, 0.00011) 10%
+    );
+    width: 100%;
+    padding: 10% 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -11;
+    text-align: center;
+    display: block;
+
+    & i {
+      opacity: 0.7;
+      position: relative;
+      top: 1rem;
+    }
+  }
+}
+
+/* Extra Large (xl) - for screens 1200px and larger */
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+  .container {
+    width: 90vw;
+  }
+
+  .navbar {
+    padding-top: 1rem;
+  }
+
+  .navlinks {
+    background-color: transparent;
+    margin-top: 0.8rem;
+    flex-direction: row;
+    width: auto;
+    position: relative;
+    height: max-content;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 0;
+    width: max-content;
+    margin: auto;
+  }
+
+  .nav-link.active::after {
+    content: "";
+    background-color: #2970e0;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -1.6rem;
+  }
+
+  .nav-link:hover a {
+    color: #407ddf;
+  }
+
+  .navbar-buttons {
+    margin-top: 0.5rem;
+  }
+
+  button.bars {
+    display: none;
+  }
+}
+
+/* Extra Extra Large (xxl) - for screens 1400px and larger */
+@media (min-width: 1400px) {
+  .container {
+    width: 88vw;
+    max-width: 1300px;
+  }
+}

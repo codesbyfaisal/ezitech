@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./assets/login-favicon.jpg" />
+  <title>Intern Portal - EziTech</title>
+  <!-- * ----- Font Awesome Icons ----- * -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="utils.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <main class="login-container">
+    <img src="./assets/white-logo.png" alt="" class="login-page-logo">
+    <div class="login-left">
+      <img src="https://interns.ezitech.org/app-assets/images/pages/login-v2.svg" alt="" class="login-img" alt="">
+    </div>
+
+    <div class="login-right grid gap-1">
+      <form action="" class="login-form grid gap-1">
+        <h1 class="login-heading">Welcome to Ezitech! 👋</h1>
+        <p>Please sign-in to your account and start the adventure</p>
+        <div class="form-control grid">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="ezitech@example.com">
+        </div>
+        <div class="form-control grid">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required placeholder="..........">
+        </div>
+
+        <div class="form-control flex-between-center">
+          <label for="remember" class="remember flex flex-item-center gap-1-half">
+            <input type="checkbox" name="remember" id="remember">
+            Remember me
+          </label>
+
+          <a href="#" class="forgot-password">
+            <p>Forgot Password?</p>
+          </a>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+
+        <p class="text text-center">New on our platform? <a href="#">Register</a></p>
+
+        <span class="form-divider text-center">or</span>
+
+        <div class="login-with-socials">
+          <a class="facebook-btn" style="background-color: #3B5998;">
+            <i class="fa-brands fa-facebook"></i></a>
+          <a class="twitter-btn" style="background-color: #333;">
+            <i class="fa-brands fa-x-twitter"></i></i></a>
+          <a class="email-btn" style="background-color: #DD4B39;">
+            <i class="fa-regular fa-envelope"></i></a>
+          <a class="github-btn" style="background-color: #444444;">
+            <i class="fab fa-github"></i></a>
+        </div>
+      </form>
+    </div>
+
+  </main>
+</body>
+
+</html>
